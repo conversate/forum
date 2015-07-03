@@ -20,9 +20,7 @@ class CreateCommentsTable extends Migration {
 			$table->boolean('is_parent');
 			$table->bigInteger('pid')->unsigned();
 			$table->bigInteger('user_id')->unsigned();
-			$table->foreign('user_id')->references('id')->on('users');
 			$table->bigInteger('thread_id')->unsigned();
-			$table->foreign('thread_id')->references('id')->on('threads');
 			$table->text('body');
 			$table->string('hash');
 			$table->timestamps();
