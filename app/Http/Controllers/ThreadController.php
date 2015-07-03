@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 use \Cache;
 use App\Comment;
 use App\Thread;
-use App\Tag;
-use App\Taggable;
+use App\Tag\Tag;
+use App\Tag\Taggable;
 
 use \Pleo\Merkle\FixedSizeTree;
 
